@@ -16,3 +16,4 @@ function ValidarRegistro(){
         else
         showAlertSuccess()          
     }
+    ValidarRegistro()
