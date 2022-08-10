@@ -15,5 +15,3 @@ function ValidarRegistro(){
         
            
     }
-
-    ValidarRegistro()
