@@ -8,10 +8,11 @@ function showAlertError() {
 <<<<<<< HEAD
 var password1 = document.getElementById("password1")
       , Password2 = document.getElementById("confirm2");
-function contrasena(){
-    if (password1.value=Password2.value )
+function ValidarRegistro(){
+    if (password1.value!=Password2.value 
+        return showAlertError()
+        else if
+        document.getElementById('terminos').checked)
+        )
     
 
-function ValidarRegistro(){
-    if(document.getElementById('terminos').checked)
-}
