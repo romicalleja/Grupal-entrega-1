@@ -16,4 +16,4 @@ function ValidarRegistro(){
         else
         showAlertSuccess()          
     }
-    document.getElementById("regBtn").addEventListener("click", ValidarRegistro);
+    document.getElementById("regBtn").addEventListener("click", ValidarRegistro());
