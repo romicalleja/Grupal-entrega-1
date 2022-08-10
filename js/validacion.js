@@ -11,7 +11,8 @@ function ValidarRegistro(){
     if (password1.value!=Password2.value 
         return showAlertError()
         else if
-        document.getElementById('terminos').checked)
-        
-           
+        document.getElementById('terminos').checked===false)
+        return showAlertError
+        else
+        showAlertSuccess          
     }
