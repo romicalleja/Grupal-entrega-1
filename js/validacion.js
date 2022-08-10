@@ -13,5 +13,6 @@ function ValidarRegistro(){
         return showAlertError()
         else if
         document.getElementById('terminos').checked)
+        
            
     }
