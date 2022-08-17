@@ -13,8 +13,11 @@ function validarRegistro(){
         else if
         (document.getElementById('terminos').checked===false)
         return showAlertError()
+        else if
+        (requeridos()==false)
+        return showAlertError()
         else
-        showAlertSuccess()          
+        return  showAlertSuccess()          
     }
 
 function requeridos(){
