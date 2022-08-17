@@ -11,6 +11,12 @@ function validarRegistro(){
     if (password1.value != password2.value) 
         return showAlertError()
         else if
+        (password1.value.length >= 6) 
+        return showAlertError()
+        else if
+        (password2.value.length >= 6) 
+        return showAlertError()
+        else if
         (document.getElementById('terminos').checked===false)
         return showAlertError()
         else if
@@ -37,11 +43,9 @@ function requeridos(){
           });
           
 function showAlertSuccess() {
-    document.getElementById("alert-success").classList.add("show");
-}
+    document.getElementById("alert-success").classList.toggle("show");
+    }
 
 function showAlertError() {
-    document.getElementById("alert-danger").classList.add("show");
+    document.getElementById("alert-danger").classList.toggle("show");
 }
-
-
