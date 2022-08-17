@@ -4,6 +4,7 @@ const registro = document.getElementById("regBtn");
 
 var password1 = document.getElementById("password1");
 var password2 = document.getElementById("password2");
+
 function validarRegistro(){
     if (password1.value != password2.value) 
         return showAlertError()
@@ -26,7 +27,5 @@ function showAlertSuccess() {
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
-    <button onclick="ValidarRegistro()">Click</button>
 
-    document.getElementById("regBtn").onclick = validarRegistro() 
 
