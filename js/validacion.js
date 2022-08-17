@@ -1,14 +1,11 @@
-function showAlertSuccess() {
-    document.getElementById("alert-success").classList.add("show");
-}
+const registro = document.getElementById("regBtn");
 
-function showAlertError() {
-    document.getElementById("alert-danger").classList.add("show");
-}
-var password1 = document.getElementById("password1")
-      , Password2 = document.getElementById("confirm2");
+
+
+var password1 = document.getElementById("password1");
+var password2 = document.getElementById("password2");
 function validarRegistro(){
-    if (password1.value!=Password2.value) 
+    if (password1.value != password2.value) 
         return showAlertError()
         else if
         (document.getElementById('terminos').checked===false)
@@ -16,4 +13,15 @@ function validarRegistro(){
         else
         showAlertSuccess()          
     }
-    document.getElementById("regBtn").onclick = validarRegistro() 
+    
+   registro.addEventListener("click", () => {
+             validarRegistro() 
+          });
+          
+function showAlertSuccess() {
+    document.getElementById("alert-success").classList.add("show");
+}
+
+function showAlertError() {
+    document.getElementById("alert-danger").classList.add("show");
+}
