@@ -11,10 +11,10 @@ function validarRegistro(){
     if (password1.value != password2.value) 
         return showAlertError()
         else if
-        (password1.value.length >= 6) 
+        (password1.value.length < 6) 
         return showAlertError()
         else if
-        (password2.value.length >= 6) 
+        (password2.value.length < 6) 
         return showAlertError()
         else if
         (document.getElementById('terminos').checked===false)
