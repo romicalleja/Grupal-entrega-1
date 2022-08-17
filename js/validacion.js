@@ -13,6 +13,7 @@ function validarRegistro(){
         else
         showAlertSuccess()          
     }
+
     
    registro.addEventListener("click", () => {
              validarRegistro() 
@@ -25,3 +26,7 @@ function showAlertSuccess() {
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
+    <button onclick="ValidarRegistro()">Click</button>
+
+    document.getElementById("regBtn").onclick = validarRegistro() 
+
